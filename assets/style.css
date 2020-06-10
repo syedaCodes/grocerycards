@@ -1,0 +1,295 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+body{
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
+    box-sizing: border-box;
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #e1cf59 0%, #d54f4f 74%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #222222;
+}
+main{
+    max-width: 100%;
+    min-height: 100vh;
+}
+.section{
+    padding: 8rem;
+}
+.container{
+    max-width: 144rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.container:not(:last-child){
+    margin-bottom: 8rem;
+}
+.card{
+    width: calc((100% - 6rem)/2);
+    float: left;
+    background-color: #ffffff;
+    max-width: 50rem;
+    height: 51rem;
+    border-radius: 3px;
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.3);
+    margin: 1rem 2rem;
+    position: relative;
+    cursor: pointer;
+}
+.card_image{
+    position: relative;
+    width: 25rem;
+    height: 18rem;
+    margin: .5rem 3rem;
+    overflow: hidden;
+}
+.shop_image{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.shop_name{
+    color: #0d0925;
+    font-weight: 400;
+    font-size: 2.4rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+.card_discount{
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    background-color: #a40606;
+    background-image: linear-gradient(315deg, #a40606 0%, #ff0002 74%);
+    border-radius: 50%;
+    position: absolute;
+    top: 19%;
+    left: 65%;
+}
+.link{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0%;
+}
+.esp{
+    font-size: 2.5rem;
+    color: #fff;
+    line-height: 3.9;
+}
+.esp_text{
+    background-color: #fbff00;
+    color: #000000;
+    width: 14rem;
+    line-height: 2.1;
+    font-size: 1.8rem;
+    font-weight: 600;
+    transform: translateY(-23px) rotate(-11deg);
+}
+.card_details{
+    width: 87%;
+    height: 22rem;
+    margin: 1.2rem auto;
+    padding: 1rem;
+    box-shadow: 4px 3px 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+.card_details p{
+    padding: 1rem;
+}
+.card_details p label{
+    font-weight: 500;
+}
+.card_details p .non,.card_details .sub_span, .card_details p .date,.card_details p .minimum{
+    color:#7b7992;
+    float: right;
+}
+.distance{
+    text-align: right;
+    padding-right: 2rem;
+    font-weight: 600;
+    color: #3da129;
+}
+.tags, .category, .tag, .mobile, .calendar, .min{
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+}
+.tags, .category, .tag, .mobile, .min{
+    margin-right: 1rem;
+}
+.calendar{
+    margin-right: 1rem;
+}
+.min{
+    fill: #ff0002;
+}
+.tags{
+    fill: #fff;
+}
+.card_details .non_esp span{
+    color: #ff9100;
+    font-size: 2rem;
+}
+.sub, .contact{
+    letter-spacing: 1.2;
+}
+.tag{
+    fill: #ff9100;
+}
+.calendar{
+    fill: #3da129;
+}
+.category{
+    fill: #ffd000;
+}
+.mobile{
+    fill: #3700ff;
+}
+.start span{
+    letter-spacing: 1.5;
+}
+@media only screen and (max-width: 20em){/* 320px */
+    html{
+        font-size: 50%;
+    }
+    .section{
+        padding: 2rem;
+    }
+    .card{
+        width: 100%;
+        margin: .5rem auto;
+    }
+    .card_discount{
+        width: 9rem;
+        height: 9rem;
+    }
+    .esp{
+        line-height: 3.1;
+    }
+    .esp_text{
+        width: 12rem;
+        transform: translateX(-13px) translateY(-8px) rotate(-8deg)
+    }
+    .card_details{
+        width: 90%;
+    }
+    .card_details p:not(:last-child){
+        border-bottom: 1px solid #f5f5f5;
+    }
+    .card_details p{
+        padding: 1rem .5rem;
+    }
+}
+@media only screen and (min-width: 20.06em) and (max-width: 23.437em){ /* 360px, 375px*/
+    html{
+        font-size: 50%;
+    }
+    .section{
+        padding: 2rem;
+    }
+    .card{
+        width: 100%;
+        margin: .5rem auto;
+    }
+    .esp_text{
+        transform: translateX(-12px) translateY(-16px) rotate(-8deg);
+    }
+    .card_discount{
+        top: 14%;
+    }
+}
+@media only screen and (min-width: 23.5em) and (max-width: 37.5em){/*411px, 500px , 600px*/
+    html{
+        font-size: 56.25%;
+    }
+    .section{
+        padding: 2rem;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 100%;
+        margin: .5rem auto;
+    }
+    .card_discount{
+        left: 62%;
+    }
+}
+@media only screen and (min-width: 37.562em) and (max-width: 56.25em){/* 600px - 700px, 900px*/
+    html{
+        font-size: 56.25%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 100%;
+        margin: .5rem auto;
+    }
+}
+@media only screen and (min-width: 56.312em) and (max-width: 64em){/*900-1024*/
+    html{
+        font-size: 56.25%;
+    }
+    .section{
+        padding: 3rem;
+    }
+    .card{
+        width: 48%;
+        margin: .5rem .5rem;
+    }
+}
+@media only screen and (min-width: 64.0625em) and (max-width: 75em){/*1024-1200px*/
+    html{
+        font-size: 56.25%;
+    }
+    .section{
+        padding: 2rem;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 48%;
+    }
+}
+@media only screen and (min-width: 75.0625em) and (max-width: 79.93em){/*1279px.*/
+    .section{
+        padding: 2rem;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 48%;
+    }
+}
